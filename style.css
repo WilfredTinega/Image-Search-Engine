@@ -30,14 +30,7 @@ body .navbar h1 {
   padding: 0.5rem;
 }
 body .navbar h1 span {
-  background: url("https://th.bing.com/th/id/R.be080585c0da64067404b23530a814ce?rik=9HpY7TmmexLOhg&pid=ImgRaw&r=0");
-  background-clip: text;
-  color: transparent;
-  background-position: top;
   cursor: pointer;
-}
-body .navbar h1 span:hover {
-  background-position: bottom;
 }
 body .navbar form {
   margin: 0 auto;
@@ -112,6 +105,7 @@ body .navbar form button {
 }
 body .main-container {
   margin: 1rem auto;
+  transition-duration: 1s ease;
 }
 body .main-container #search-result {
   width: 80%;

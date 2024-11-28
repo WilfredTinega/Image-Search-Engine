@@ -31,15 +31,7 @@ body{
             padding: 0.5rem;
     
             span{
-                background: url("https://th.bing.com/th/id/R.be080585c0da64067404b23530a814ce?rik=9HpY7TmmexLOhg&pid=ImgRaw&r=0");
-                background-clip: text;
-                color: transparent;
-                background-position: top;
                 cursor: pointer;
-            }
-
-            span:hover{
-                background-position: bottom;
             }
         }
     
@@ -130,6 +122,7 @@ body{
     
     .main-container{
         margin: 1rem auto;
+        transition-duration: 1s ease;
 
         #search-result{
             width: 80%;
