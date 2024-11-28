@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(90deg, black, rgba(135, 207, 235, 0.2));
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+body .navbar {
+  margin: 0 auto;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(90deg, black, rgb(135, 207, 235));
+}
+body .navbar h1 {
+  margin: 0rem auto 1rem auto;
+  text-align: center;
+  color: #fff;
+  padding: 0.5rem;
+}
+body .navbar h1 span {
+  background: url("https://th.bing.com/th/id/R.be080585c0da64067404b23530a814ce?rik=9HpY7TmmexLOhg&pid=ImgRaw&r=0");
+  background-clip: text;
+  color: transparent;
+  background-position: top;
+  cursor: pointer;
+}
+body .navbar h1 span:hover {
+  background-position: bottom;
+}
+body .navbar form {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(162, 174, 239, 0.1960784314);
+  backdrop-filter: blur(40px);
+  border-radius: 0.5rem;
+  width: 50%;
+  height: 7vh;
+}
+body .navbar form input {
+  flex: 1;
+  outline: none;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: block;
+  font-size: 1.5rem;
+}
+body .navbar form input::placeholder {
+  color: #fff;
+  font-size: 1.5rem;
+}
+body .navbar form button {
+  padding: 1rem;
+  height: 100%;
+  background-color: #ff3929;
+  color: #fff;
+  font-size: 1.1rem;
+  border: 0;
+  outline: 0;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  cursor: pointer;
+  display: block;
+}
+@media (max-width: 768px) {
+  body .navbar {
+    background-image: linear-gradient(90deg, black, rgb(135, 207, 235));
+  }
+  body .navbar h1 {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+  }
+  body .navbar h1 span {
+    background: url("https://th.bing.com/th/id/R.be080585c0da64067404b23530a814ce?rik=9HpY7TmmexLOhg&pid=ImgRaw&r=0");
+    background-clip: text;
+    color: transparent;
+    background-position: bottom;
+  }
+  body .navbar form {
+    border-radius: 0.5rem;
+    width: 90%;
+  }
+  body .navbar form input {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+    height: 100%;
+  }
+  body .navbar form input::placeholder {
+    font-size: 0.8rem;
+  }
+  body .navbar form button {
+    padding: 0.5rem 1rem;
+    height: 100%;
+    font-size: 1rem;
+  }
+}
+body .main-container {
+  margin: 1rem auto;
+}
+body .main-container #search-result {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-gap: 1rem;
+}
+body .main-container #search-result img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+body .main-container #show-more-btn {
+  background-color: #ff3929;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin: 2rem auto;
+  cursor: pointer;
+  display: none;
+}
+body .main-container #show-more-btn:hover {
+  background: rgba(162, 174, 239, 0.1960784314);
+  color: #ff3929;
+}
+body #greetings {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+  padding: 0 1rem;
+}
+@media (max-width: 768px) {
+  body #greetings {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 66.5vh;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    padding: 0 1rem;
+  }
+}
+body .footer {
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  min-height: 10vh;
+  color: #fff;
+  background-image: linear-gradient(90deg, rgba(135, 207, 235, 0.2), black);
+}
+
+/*# sourceMappingURL=style.css.map */
